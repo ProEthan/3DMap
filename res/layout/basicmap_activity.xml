@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.amap.api.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent" />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="54dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/basicmap"
+            android:layout_width="65dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_map_poi"
+            android:gravity="center"
+            android:text="标准地图"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/navimap"
+            android:layout_width="65dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_map_poi"
+            android:gravity="center"
+            android:text="导航模式"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/rsmap"
+            android:layout_width="65dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_map_poi"
+            android:gravity="center"
+            android:text="卫星地图"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <Button
+            android:id="@+id/nightmap"
+            android:layout_width="65dp"
+            android:layout_height="32dp"
+            android:background="@drawable/btn_map_poi"
+            android:gravity="center"
+            android:text="夜间模式"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+    <Button
+    android:id="@+id/downloadmap"
+    android:layout_width="wrap_content"
+    android:layout_height="32dp"
+    android:layout_alignParentBottom="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginBottom="54dp"
+    android:background="@drawable/btn_map_poi"
+    android:gravity="center"
+    android:text="离线地图下载"
+    android:textColor="@color/black"
+    android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/autoDirection"
+        android:layout_width="35dp"
+        android:layout_height="36dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="102dp"
+        android:layout_marginEnd="11dp"
+        android:background="@mipmap/route_walk_select" />
+
+</RelativeLayout>

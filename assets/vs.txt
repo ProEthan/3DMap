@@ -1,0 +1,22 @@
+attribute vec3 aPos;
+attribute vec3 aNormal;
+attribute vec4 aTexCoords;
+
+uniform mat4 model;
+uniform mat4 view;
+uniform mat4 projection;
+
+varying vec2 TexCoords;
+varying vec3 Normal;
+varying vec3 FragPos;
+
+void main(){
+    // 世界坐标位置
+    FragPos = vec3(model * vec4(aPos, 1.0));
+    // 纹理坐标
+    TexCoords = aTexCoords.xy;
+    // 法向量
+    Normal = aNormal;
+    // 摄影机坐标位置
+    gl_Position = projection * view * vec4(FragPos, 1.0);
+}
