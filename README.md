@@ -11,4 +11,3 @@
 2，加载三维人体模型到当前位置
 3，引入光照，增强体验感
 4，扩展功能模块：三维动态广告牌
-![Image text](https://github.com/ProEthan/3DMap/blob/master/image_folder/arrow1.png)
